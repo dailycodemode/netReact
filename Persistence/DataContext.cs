@@ -11,7 +11,9 @@ namespace Persistence
 
     }
 
+// where you add your tables to the c/ class
     public DbSet<Value> Values { get; set; }   //table name
+    public DbSet<Activity> Activities { get; set; }
     
     // seeding of data
     protected override void OnModelCreating(ModelBuilder builder)

@@ -102,7 +102,10 @@ namespace Persistence
                         City = "London",
                         Venue = "Cinema",
                     }
-                }
+                };
+
+                context.Activities.AddRange(activities);
+                context.SaveChanges();
             }
         }
     }
